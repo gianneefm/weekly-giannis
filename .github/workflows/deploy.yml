@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: auth
+  id-token: write   # ← было auth, стало write
 
 concurrency:
   group: "pages"
