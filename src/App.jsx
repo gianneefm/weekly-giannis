@@ -2,9 +2,11 @@ import React from 'react'
 
 const App = () => {
   const colors = {
-    pureWhite: '#FFFFFF',
-    cloudDancer: '#F0EEE9',
-    typographyBlack: '#000000',
+    backgroundPt1: '#F0F0F0',
+    backgroundPt2: '#403d36',
+    typographyHd: '#403d36',
+    typographyFt: '#F0F0F0',
+
   };
 
   const grainOverlayStyle = {
@@ -22,7 +24,7 @@ const App = () => {
         className="relative w-full max-w-[380px] flex flex-col transition-all duration-500 transform hover:scale-[1.02]"
         style={{
           aspectRatio: '1 / 1',
-          background: `linear-gradient(to bottom, ${colors.pureWhite}, ${colors.cloudDancer})`,
+          background: `linear-gradient(to bottom, ${colors.backgroundPt1}, ${colors.backgroundPt2})`,
           boxShadow: `
             0 2px 4px rgba(0,0,0,0.05),
             0 10px 20px rgba(0,0,0,0.08),
@@ -35,10 +37,10 @@ const App = () => {
         <div style={grainOverlayStyle} aria-hidden="true" />
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
-          <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: colors.typographyBlack }}>
-            MAY 11, 2026
+          <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: colors.typographyHd }}>
+            JUN 4TH, 2026
           </p>
-          <h2 className="text-lg sm:text-xl font-bold uppercase tracking-[0.15em] leading-tight" style={{ color: colors.typographyBlack }}>
+          <h2 className="text-lg sm:text-xl font-bold uppercase tracking-[0.15em] leading-tight" style={{ color: colors.typographyHd }}>
             WEEKLY GIANNIS
           </h2>
         </div>
@@ -46,7 +48,7 @@ const App = () => {
         <div className="relative z-10 px-8 flex-grow flex items-center justify-center min-h-0">
           <div className="w-full h-full flex items-center justify-center">
             <img
-              src="https://placehold.co/600x600/000000/FFFFFF?text=ALBUM+ART"
+              src="https://i.ibb.co/Ndsbvc37/Cover-of-Pretty-Girls-by-Kai-Angel.jpg"
               alt="Album art"
               className="max-w-full max-h-full object-cover shadow-xl border border-black/5"
               style={{ borderRadius: '0px' }}
@@ -55,11 +57,11 @@ const App = () => {
         </div>
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
-          <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight leading-none mb-1" style={{ color: colors.typographyBlack }}>
-            TRACK TITLE
+          <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight leading-none mb-1" style={{ color: colors.typographyFt }}>
+            PRETTY GIRLS
           </h3>
-          <p className="text-xs sm:text-sm font-medium tracking-wide opacity-70 uppercase" style={{ color: colors.typographyBlack }}>
-            ARTIST NAME
+          <p className="text-xs sm:text-sm font-medium tracking-wide opacity-70 uppercase" style={{ color: colors.typographyFt }}>
+            KAI ANGEL
           </p>
         </div>
       </div>
