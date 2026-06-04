@@ -1,12 +1,27 @@
 import React from 'react'
 
+const getOrdinalSuffix = (day) => {
+  if (day >= 11 && day <= 13) return 'th';
+  const last = day % 10;
+  if (last === 1) return 'st';
+  if (last === 2) return 'nd';
+  if (last === 3) return 'rd';
+  return 'th';
+};
+
+const formatDate = (dateStr) => {
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const date = new Date(dateStr + 'T00:00:00');
+  return `${months[date.getMonth()]} ${date.getDate()}${getOrdinalSuffix(date.getDate())}, ${date.getFullYear()}`;
+};
+
 const App = () => {
   const colors = {
-    backgroundPt1: '#F0F0F0',
-    backgroundPt2: '#403d36',
-    typographyHd: '#403d36',
-    typographyFt: '#F0F0F0',
-
+    backgroundPt1: '#ffffff',
+    backgroundPt2: '#ffffff',
+    typographyHd: '#000000',
+    typographyFt: '#000000',
   };
 
   const grainOverlayStyle = {
@@ -38,7 +53,7 @@ const App = () => {
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
           <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: colors.typographyHd }}>
-            JUN 4TH, 2026
+            {formatDate('2026-06-04')}
           </p>
           <h2 className="text-lg sm:text-xl font-bold uppercase tracking-[0.15em] leading-tight" style={{ color: colors.typographyHd }}>
             WEEKLY GIANNIS
@@ -58,10 +73,10 @@ const App = () => {
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
           <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight leading-none mb-1" style={{ color: colors.typographyFt }}>
-            PRETTY GIRLS
+            TRACK TITLE
           </h3>
           <p className="text-xs sm:text-sm font-medium tracking-wide opacity-70 uppercase" style={{ color: colors.typographyFt }}>
-            KAI ANGEL
+            ARTIST NANE
           </p>
         </div>
       </div>
