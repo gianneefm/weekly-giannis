@@ -63,7 +63,7 @@ const App = () => {
         <div className="relative z-10 px-8 flex-grow flex items-center justify-center min-h-0">
           <div className="w-full h-full flex items-center justify-center">
             <img
-              src="https://i.ibb.co/Ndsbvc37/Cover-of-Pretty-Girls-by-Kai-Angel.jpg"
+              src="https://i.ibb.co/C514yyQ6/merlin-ai-2026-02-12-T19-38-17-670744.png"
               alt="Album art"
               className="max-w-full max-h-full object-cover shadow-xl border border-black/5"
               style={{ borderRadius: '0px' }}
