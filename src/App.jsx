@@ -18,10 +18,10 @@ const formatDate = (dateStr) => {
 
 const App = () => {
   const colors = {
-    backgroundPt1: '#ffffff',
-    backgroundPt2: '#ffffff',
-    typographyHd: '#000000',
-    typographyFt: '#000000',
+    backgroundPt1: '#0f2a2a',
+    backgroundPt2: '#2e6561',
+    typographyHd: '#ffffff',
+    typographyFt: '#c7d6d4',
   };
 
   const grainOverlayStyle = {
@@ -52,7 +52,7 @@ const App = () => {
         <div style={grainOverlayStyle} aria-hidden="true" />
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
-          <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: colors.typographyHd }}>
+          <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: '#dad6d0' }}>
             {formatDate('2026-06-009')}
           </p>
           <h2 className="text-lg sm:text-xl font-bold uppercase tracking-[0.15em] leading-tight" style={{ color: colors.typographyHd }}>
