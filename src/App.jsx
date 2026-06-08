@@ -53,7 +53,7 @@ const App = () => {
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
           <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: '#dad6d0' }}>
-            {formatDate('2026-06-009')}
+            {formatDate('2026-06-09')}
           </p>
           <h2 className="text-lg sm:text-xl font-bold uppercase tracking-[0.15em] leading-tight" style={{ color: colors.typographyHd }}>
             WEEKLY GIANNIS
