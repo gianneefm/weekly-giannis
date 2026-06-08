@@ -73,7 +73,7 @@ const App = () => {
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
           <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight leading-none mb-1" style={{ color: colors.typographyFt }}>
-            ГОРИ, АЛЫЙ ЦВЕТОК
+            ГОРИ, <span style={{color: "#7b1220" }}>АЛЫЙ ЦВЕТОК</span>
           </h3>
           <p className="text-xs sm:text-sm font-medium tracking-wide opacity-70 uppercase" style={{ color: colors.typographyFt }}>
             GREEN APELSIN
