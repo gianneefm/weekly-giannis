@@ -18,10 +18,10 @@ const formatDate = (dateStr) => {
 
 const App = () => {
   const colors = {
-    backgroundPt1: '#ffffff',
-    backgroundPt2: '#ffffff',
-    typographyHd: '#000000',
-    typographyFt: '#000000',
+    backgroundPt1: '#1E252B',
+    backgroundPt2: '#2D3740',
+    typographyHd: '#8A9BA8',
+    typographyFt: '#F5F7FA',
   };
 
   const grainOverlayStyle = {
