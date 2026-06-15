@@ -18,10 +18,10 @@ const formatDate = (dateStr) => {
 
 const App = () => {
   const colors = {
-    backgroundPt1: '#0f2a2a',
-    backgroundPt2: '#2e6561',
-    typographyHd: '#ffffff',
-    typographyFt: '#c7d6d4',
+    backgroundPt1: '#ffffff',
+    backgroundPt2: '#ffffff',
+    typographyHd: '#000000',
+    typographyFt: '#000000',
   };
 
   const grainOverlayStyle = {
@@ -52,8 +52,8 @@ const App = () => {
         <div style={grainOverlayStyle} aria-hidden="true" />
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
-          <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: '#dad6d0' }}>
-            {formatDate('2026-06-09')}
+          <p className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase mb-1" style={{ color: colors.typographyHd }}>
+            {formatDate('2026-06-04')}
           </p>
           <h2 className="text-lg sm:text-xl font-bold uppercase tracking-[0.15em] leading-tight" style={{ color: colors.typographyHd }}>
             WEEKLY GIANNIS
@@ -63,7 +63,7 @@ const App = () => {
         <div className="relative z-10 px-8 flex-grow flex items-center justify-center min-h-0">
           <div className="w-full h-full flex items-center justify-center">
             <img
-              src="https://i.ibb.co/JVTPDxG/Cover-of-by-Green-Apelsin.jpg"
+              src="https://i.ibb.co/WNsr6qrg/Cover-of-by-Drummatix.jpg"
               alt="Album art"
               className="max-w-full max-h-full object-cover shadow-xl border border-black/5"
               style={{ borderRadius: '0px' }}
@@ -73,10 +73,10 @@ const App = () => {
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center p-6 flex-none">
           <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight leading-none mb-1" style={{ color: colors.typographyFt }}>
-            ГОРИ, <span style={{color: "#7b1220" }}>АЛЫЙ ЦВЕТОК</span>
+            Жди меня
           </h3>
           <p className="text-xs sm:text-sm font-medium tracking-wide opacity-70 uppercase" style={{ color: colors.typographyFt }}>
-            GREEN APELSIN
+            Drummatix
           </p>
         </div>
       </div>
